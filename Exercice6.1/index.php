@@ -10,7 +10,15 @@
 
 <body>
     <h1>Exercice 1 Partie 6 : Les paramètres d'URL PHP</h1>
-    <a href="test.php?lastname=Nemare&amp;firstname=Jean">Informations</a>
+    <a href="index.php?lastname=Nemare&firstname=Jean">Informations</a>
+    <p>
+        <?php
+        if (isset($_GET['lastname']) && isset($_GET['firstname']))
+        {
+        echo 'Nom: '.$_GET['lastname'];
+        ?>
+    </p>
+    <p><?='Prénom: '.$_GET['firstname'];}?></p>        
 </body>
 
 </html>

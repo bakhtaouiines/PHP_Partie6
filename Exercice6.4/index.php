@@ -8,6 +8,14 @@
 </head>
 <body>
     <h1>Exercice 4 Partie 6 : Les paramètres d'URL PHP</h1>
-    <a href="test.php?language=PHP&server=LAMP">Informations</a>
+    <a href="index.php?language=PHP&server=LAMP">Informations</a>
+    <p>
+        <?php
+        if (isset($_GET['language']) && isset($_GET['server']))
+        {
+        echo 'Language: '.$_GET['language'];
+        ?>
+    </p>
+    <p><?= 'Serveur: '.$_GET['server'];}?></p>
 </body>
 </html>

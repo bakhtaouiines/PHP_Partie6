@@ -1,3 +1,10 @@
+<?php
+        if (isset($_GET['lastname']) && isset($_GET['firstname']) && isset ($_GET['age']))
+        {
+            echo 'Âge: '.$_GET['age'];}
+        else
+        {
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,6 +15,7 @@
 </head>
 <body>
     <h1>Exercice 2 Partie 6 : Les paramètres d'URL PHP</h1>
-    <a href="test.php?lastname=Nemare&firstname=Jean">Informations</a>    
+    <a href="index.php?lastname=Nemare&firstname=Jean">Informations</a> 
+    <p><?= 'Âge: Donnée manquante';}?></p>
 </body>
 </html>

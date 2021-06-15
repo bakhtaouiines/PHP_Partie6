@@ -13,8 +13,8 @@
     <a href="index.php?lastname=Nemare&firstname=Jean">Informations</a>
     <p>
         <?php
-        if (isset($_GET['lastname']) && isset($_GET['firstname']))
-        {
+        if (isset($_GET['lastname']) && isset($_GET['firstname'])) //isset = Détermine si une variable est déclarée et est différente de null
+        {                                                         //$_GET variable superglobale 
         echo 'Nom: '.$_GET['lastname'];
         ?>
     </p>

@@ -9,15 +9,13 @@
 <body>
     <h1>Exercice 6 Partie 6 : Les paramètres d'URL PHP</h1>
     <a href="index.php?building=12&room=101">Informations</a>
-    <p>
         <?php
         if (isset($_GET['building']) && isset($_GET['room']))
-        {
-        echo 'Building: '.$_GET['building'];?>
-        <p>
-        <?= 'Room: '.$_GET['room'];
-        }
-        ?>
-    </p>
+        {?>
+    <p><?= 'Building: '.$_GET['building'];?></p>
+    <p><?= 'Room: '.$_GET['room'];?></p>
+    <?php
+    }
+    ?>
 </body>
 </html>
